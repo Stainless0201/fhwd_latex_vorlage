@@ -232,10 +232,10 @@ final             % draft beschleunigt die Kompilierung
             hyperfirst=false,% don't hyperlink first use
             sanitize=none    % switch off sanitization as description
             ]{glossaries}
-            \newglossarystyle{mylist}{%
-\setglossarystyle{long}% base this style on the list style
-\renewcommand*{\glossaryentryfield}[5]{%
-    \glsentryitem{##1}\textbf{##2} & ##3 \\}%
+  \newglossarystyle{mylist}{%
+  \setglossarystyle{long}% base this style on the list style
+  \newcommand*{\glossaryentryfield}[5]{%
+    \glsentryitem{##1}\textbf{##2} & ##3 \\}% the style is defined in the next command
 }
 
 % Verbessert das Referenzieren von Kapiteln, Abbildungen etc.
